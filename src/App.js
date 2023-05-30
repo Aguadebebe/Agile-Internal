@@ -13,47 +13,27 @@ import About  from "./pages/About";
 
 
 function App() {
- /* const [contacts, setContacts] = useState([]);
-
-  const fetchContacts = async () => {
-    const request = await firestore.collection("contacts").orderBy("postedOn", "desc").get();
-    const tempContacts = request.docs.map((contact) => ({...contact.data(), id: contact.id}));
-    setContacts(tempContacts);
-    console.log(tempContacts);
-  }
-
-  useEffect(() => {
-    fetchContacts();
-  }, []);*/
-
- return (
-   
-     <BrowserRouter basename="/tai-chi">
-     <div> 
-     <Navbar />
-     </div>
-       <Switch>
-         <Route exact path="/">
-           <HomePage />
-         </Route>
-         <Route path="/Contact">
-          <div> 
-          {/*{contacts.map((contact) => (
-               <Contact key={contact.id} {...contact} /> 
-             ))}*/}
-           <Contact />  
-          </div> 
-         </Route>
-         <Route path="/About">
-           <About />  
-         </Route>
-       </Switch>
-
-        
-      
- </BrowserRouter>
   
- );
+  return (
+   
+    <BrowserRouter basename="/tai-chi">
+      <div> 
+        <Navbar />
+      </div>
+        <Switch>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/Contact">
+            <Contact />  
+          </Route>
+          <Route path="/About">
+            <About />  
+          </Route>
+        </Switch>
+    </BrowserRouter>
+  
+  );
 }
 
 export default App;
