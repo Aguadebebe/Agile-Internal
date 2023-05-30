@@ -10,10 +10,10 @@ function Contact() {
       phone: "",
       email: "",
       message: "",
-
     });
+    
     const [responseData, setResponseData] = useState({});
-     
+    const [formErrors, setFormErrors] = useState({});
     
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -22,27 +22,61 @@ function Contact() {
             [name]: value
         });
     }
+
+    const validateForm = () => {
+        const errors = {};
+        let isValid = true;
+
+        if (formData.name.trim() === "") {
+          errors.name = "Name is required";
+          isValid = false;
+        }
+
+        if (formData.phone.trim() === "") {
+          errors.phone = "Phone is required";
+          isValid = false;
+        }
+
+        if (formData.email.trim() === "") {
+          errors.email = "Email is required";
+          isValid = false;
+        }
+
+        if (formData.message.trim() === "") {
+          errors.message = "Message is required";
+          isValid = false;
+        }
+
+        setFormErrors(errors);
+        return isValid;
+    };
+
+
+    
     const handleSubmit = async (event) => {
       event.preventDefault();
       console.log(formData);
+
+      if (!validateForm()) {
+        return;
+      }
+      
     
       try {
-        const response = await axios.post(
-          "https://firestore.googleapis.com/v1/projects/agile-internal/databases/(default)/documents/contacts",
-          {
-            fields: {
-              name: { stringValue: formData.name },
-              phone: { stringValue: formData.phone },
-              email: { stringValue: formData.email },
-              message: { stringValue: formData.message },
-            },
-          }
-        );
-    
-        if (response.status === 200) {
+
+        const { name, phone, email, message } = formData;
+
+        const response = await axios.post("http://localhost:5000/api/contact", {
+          name,
+          phone,
+          email,
+          message,
+        });
+  
+      if (response.status === 200) {
           const responseData = await response.data;
           setResponseData(responseData);
-          setFormData({ name: "", phone: "", email: "", message: "" });
+          setFormData({ name: "", phone: "", email: "", message: "" }); // Reset form input fields to empty after form submission
         } else {
           console.log(`status: ${response.status}`);
         }
@@ -52,10 +86,6 @@ function Contact() {
     };
     
      
-    
-     
-    
- 
     
     return  (
         <div>
@@ -81,8 +111,10 @@ function Contact() {
                 className="border border-gray-500 py-2 px-3"
                 value={formData.name}
                 onChange={handleInputChange}
-              
               />
+              {formErrors.name && (
+                <p className="text-red-500">{formErrors.name}</p>
+              )}
             </div>
             <div className="flex flex-col mb-4">
               <label htmlFor="phone" className="mb-2">
@@ -96,8 +128,10 @@ function Contact() {
                 className="border border-gray-500 py-2 px-3"
                 value={formData.phone}
                 onChange={handleInputChange}
-                
               />
+              {formErrors.phone && (
+                <p className="text-red-500">{formErrors.phone}</p>
+              )}
             </div>
             <div className="flex flex-col mb-4">
               <label htmlFor="email" className="mb-2">
@@ -111,8 +145,10 @@ function Contact() {
                 className="border border-gray-500 py-2 px-3"
                 value={formData.email}
                 onChange={handleInputChange} 
-                 
               />
+              {formErrors.email && (
+                <p className="text-red-500">{formErrors.email}</p>
+              )}
             </div>
             <div className="flex flex-col mb-4">
               <label htmlFor="message" className="mb-2">
@@ -125,8 +161,10 @@ function Contact() {
                 className="border border-gray-500 py-2 px-3"
                 value={formData.message}
                 onChange={handleInputChange}
-                 
               ></textarea>
+              {formErrors.message && (
+                <p className="text-red-500">{formErrors.message}</p>
+              )}
             </div>
             <button 
               type="submit" 
