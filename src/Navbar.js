@@ -24,7 +24,7 @@ function Navbar() {
           Schedule
         </Typography>
         <Typography variant="h6" component={Link} to="/Contact" sx={{ textDecoration: 'none', color: 'inherit', '&:hover': {
-          color: '#FFFFFF', // Customize the hover color
+          color: '#FFFFFF', // Customize the hover color Mouse hovers over link it changes to white
         }, }}>
           Contact
         </Typography>
