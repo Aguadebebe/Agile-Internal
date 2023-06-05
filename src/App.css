@@ -1,0 +1,80 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
+  }
+   
+  .about-container {
+    display: flex;
+    flex-direction: column; /* Updated to stack rows vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .schedule-container {
+    display: flex;
+    flex-direction: column; /* Updated to stack rows vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .schedule-cell-container {
+    display: flex;
+    flex-direction: row;  
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .schedule-board {
+    display: flex;
+    margin-bottom: 380px; /* Added margin between rows */
+  }
+
+  .schedule-cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+  .schedule-row .input-field {
+    width: calc(var(--cell-size) * 9.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .input-text {
+    margin: 0;
+    padding: 75px;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+
+
+ 
+     
+     
+     
+     
+
+
+.toc-border {
+    outline: 1px solid grey;
+    
+}
+.border {
+  outline: 1px solid grey;
+  
+}
+
+ 

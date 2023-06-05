@@ -1,21 +1,27 @@
-import { BsYinYang } from "react-icons/bs";
-import  IMG_0989 from "../images/IMG_0989.png";
+
+import Big_Sur_Waters_Edge from "../images/Big_Sur_Waters_Edge.png";
+
 
 function HomePage() {
+  const styles2 ={
+    backgroundImage:  `url(${Big_Sur_Waters_Edge})`,
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+      
+  };
     return  (
-        <div>
-          <header className="flex justify-center text-4xl text-green-400 font-serif">
+        
+      <div style={styles2}>  
+        <div className="home-page-container">
+          <header className="flex justify-center text-7xl text- black font-serif">
            <h1>Agile Internal</h1>
           </header>
-           <h2 className="flex justify-center text-sky-600">Meditation|Movement|coaching</h2>
-          <div className="flex justify-center"> 
-           <BsYinYang className="text-center bg-gradient-to-r from-cyan-500 to-blue-500 border-radius rounded-full text-9xl" />
+           <h2 className="flex justify-center pb-48 text-4xl decoration-2 font-style: italic underline text-green-300">Meditation|Movement|coaching</h2>
+          <div className="flex justify-center">  
           </div>
-          <div className="flex justify-center transform scale-150 mt-60"> 
-            <img src={IMG_0989} alt="Waterfall" />
-          </div> 
         </div>
-         
+      </div> 
+     
        
     );
 }
