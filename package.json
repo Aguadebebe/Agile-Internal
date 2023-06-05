@@ -1,5 +1,5 @@
 {
-  "name": "tai-chi2",
+  "name": "tai-chi3",
   "version": "0.1.0",
   "private": true,
   "hompage": "https://Aguadebebe.github.io/once-more",
@@ -29,7 +29,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build"
-
   },
   "eslintConfig": {
     "extends": [
