@@ -19,7 +19,7 @@ function Navbar() {
           About
         </Typography>
         <Typography className="pr-5" variant="h6" component={Link} to="/schedule" sx={{ textDecoration: 'none', color: 'inherit', '&:hover': {
-          color: '#FFFFFF', // Customize the hover color
+          color: '#FFFFFF', // Customize the hover color Mouse hovers over link it changes to white
         }, }}>
           Schedule
         </Typography>
