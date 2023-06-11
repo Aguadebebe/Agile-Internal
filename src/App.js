@@ -32,7 +32,7 @@ const theme = createTheme({
 function App() {
   return (
    <ThemeProvider theme={theme}> 
-    <BrowserRouter>
+    <BrowserRouter basename="Agile-Internal">
       <Navbar /> {/* Render the modified Navbar component */}
       <Switch>
         <Route exact path="/" component={HomePage} />
