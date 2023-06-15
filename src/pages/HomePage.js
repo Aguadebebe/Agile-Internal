@@ -29,11 +29,4 @@ function HomePage() {
 export default HomePage;
 
 
-/** home page components.
- * about page
- * contact page.
- * json file for back end.
- * home page object data. each section will contain the data for that page.
- * In pages create Context for state.
- * 
-*/
+ 
