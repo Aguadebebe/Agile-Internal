@@ -11,8 +11,8 @@ function HomePage() {
   };
     return  (
         
-      <div style={styles2}>  
-        <div className="home-page-container">
+      <div style={styles2} className="xs:scale-100 sm:scale-50 md:scale-100 lg:scale-100">  
+        <div className="home-page-container xs:scale-75 sm:scale-50 md:scale-75 lg:scale-100">
           <header className="flex justify-center text-7xl text- black font-serif">
            <h1>Agile Internal</h1>
           </header>

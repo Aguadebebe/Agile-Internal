@@ -168,7 +168,7 @@ function Contact() {
             </div>
             <button 
               type="submit" 
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold xs:py-0 sm:py-2 md:py-2 lg:py-2 px-4 rounded">
                 Submit
             </button>
           </form>
