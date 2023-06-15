@@ -1,6 +1,6 @@
 
 import Big_Sur_Waters_Edge from "../images/Big_Sur_Waters_Edge.png";
-
+//
 
 function HomePage() {
   const styles2 ={
