@@ -113,7 +113,7 @@ const oauth2Client = new OAuth2(
     }
   });
 
-  
+  // This connects to the axios function in the Schedule.js component.
   app.get("/api/events", async (req, res) => {
     try {
       const calendar = google.calendar({ version: "v3", auth: oauth2Client });
