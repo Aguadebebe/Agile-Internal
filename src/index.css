@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/*body {
+  body {
     background-color: antiquewhite;
-  }*/
+  }
   .home-page-container {
     display: flex;
     flex-direction: column; /* Updated to stack rows vertically */

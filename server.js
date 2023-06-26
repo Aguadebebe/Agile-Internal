@@ -64,10 +64,10 @@ app.post( "/api/contact", async (req, res) => {
         await transporter.sendMail(mailOptions);
         
         res.status(200).json({ message: "Email sent successfully" });
-    } catch (error) {
-        console.log(error);
-        res.status(500).json({ message: "An error ocurred while sending the email." });
-    }
+        } catch (error) {
+          console.log(error);
+          res.status(500).json({ message: "An error ocurred while sending the email." });
+        }
 });
 
 
@@ -75,28 +75,27 @@ const oauth2Client = new OAuth2(
     process.env.REACT_APP_CLIENT_ID_2,
     process.env.REACT_APP_CLIENT_SECRET_2,
     "https://developers.google.com/oauthplayground"
-  );
+);
   
-  const SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
+const SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"];
   
-  oauth2Client.setCredentials({
+oauth2Client.setCredentials({
     refresh_token: process.env.REACT_APP_OAUTH_REFRESH_TOKEN_2,
-  });
+});
 
  
-
-  const redirectUri = encodeURIComponent('https://developers.google.com/oauthplayground');
-  app.get("/api/auth/url", (req, res) => {
+const redirectUri = encodeURIComponent('https://developers.google.com/oauthplayground');
+app.get("/api/auth/url", (req, res) => {
     const authUrl = oauth2Client.generateAuthUrl({
       access_type: "offline",
       scope: SCOPES,
       redirect_uri: redirectUri
     });
     res.redirect(authUrl);
-  });
+});
   
-  app.get("/api/auth/callback", async (req, res) => {
-    const { code } = req.query;
+app.get("/api/auth/callback", async (req, res) => {
+  const { code } = req.query;
   
     try {
       const { tokens } = await oauth2Client.getToken(code);
@@ -111,10 +110,10 @@ const oauth2Client = new OAuth2(
       console.error("Error setting access token:", error);
       res.status(500).json({ error: "Failed to set access token" });
     }
-  });
+});
 
-  // This connects to the axios function in the Schedule.js component.
-  app.get("/api/events", async (req, res) => {
+// This connects to the axios function in the Schedule.js component.
+app.get("/api/events", async (req, res) => {
     try {
       const calendar = google.calendar({ version: "v3", auth: oauth2Client });
       const response = await calendar.events.list({
@@ -136,13 +135,13 @@ const oauth2Client = new OAuth2(
       console.error("Error fetching events from Google Calendar:", error);
       res.status(500).json({ error: "Failed to fetch events" });
     }
-  });
+});
   
 
  
   
 
-  // Start server on port 5000
+// Start server on port 5000
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
