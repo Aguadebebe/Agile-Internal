@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/*body {
     background-color: antiquewhite;
-  }
+  }*/
   .home-page-container {
     display: flex;
     flex-direction: column; /* Updated to stack rows vertically */
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100vh;
   }
   .about-container {
@@ -28,5 +28,5 @@ body {
     min-height: 100vh; /* Changed to min-height instead of height */
   }
 
-   
+    
   
