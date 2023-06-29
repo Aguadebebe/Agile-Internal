@@ -136,9 +136,8 @@ app.get("/api/events", async (req, res) => {
       res.status(500).json({ error: "Failed to fetch events" });
     }
 });
-  
 
- 
+  
   
 
 // Start server on port 5000
@@ -146,3 +145,14 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 });
+
+
+// fix  scale responsiveness for all pages
+
+// Host on Firebase
+
+// Make permanent OAuth Accounts
+
+// Get Blakes pictures - log - video's etc.....
+
+// Add HTTPS to URL and Favicon

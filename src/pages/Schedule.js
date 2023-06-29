@@ -24,7 +24,7 @@ const localizer = dateFnsLocalizer({
 
 const Schedule = () => {
   const [events, setEvents] = useState([]);
-
+  
   const styles3 = {
     backgroundImage: `url(${Catalina_Sunset})`,
     backgroundRepeat: "no-repeat",
@@ -49,8 +49,8 @@ const Schedule = () => {
       style={styles3}
       className="schedule-page-container xs:scale-100 sm:scale-100 md:scale-100 lg:scale-100"
     >
-      <h1>Training Options</h1>
-      <div>
+      <h1 className="pt-10 text-2xl font-style: italic">Training Options</h1>
+      <div className="calendar-container xs:scale-100 sm:scale-100 md:scale-100 lg:scale-100">
         <Calendar
           localizer={localizer}
           events={events}
@@ -64,3 +64,5 @@ const Schedule = () => {
 };
 
 export default Schedule;
+
+ 
