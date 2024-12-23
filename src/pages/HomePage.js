@@ -14,7 +14,7 @@ function HomePage() {
       <div style={styles2}>  
         <div className="home-page-container">
           <header className="flex justify-center text-7xl text- black font-serif">
-           <h1>Agile Internal</h1>
+           <h1>Visual Stories</h1>
           </header>
            <h2 className="flex justify-center pb-48 text-4xl decoration-2 font-style: italic underline text-green-300">Meditation|Movement|coaching</h2>
           <div className="flex justify-center">  
