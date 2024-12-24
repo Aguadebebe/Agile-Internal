@@ -35,7 +35,7 @@
 
   .schedule-board {
     display: flex;
-    margin-bottom: 380px; /* Added margin between rows *//*
+    margin-bottom: 380px;  
   }
 
   .schedule-cell {
