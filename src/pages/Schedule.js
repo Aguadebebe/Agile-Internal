@@ -1,4 +1,5 @@
-import '../App.css';
+import React, { useRef, useEffect } from 'react';
+/*import '../App.css';*/
 import Catalina_Sunset from "../images/Catalina_Sunset.png";
 
 function Schedule() {
@@ -8,19 +9,29 @@ function Schedule() {
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
       };
+
+    const h1Ref = useRef(null);
+
+    useEffect(() => { 
+      if (h1Ref.current) {
+       h1Ref.current.style.color = 'grey';
+      }
+    }, []);
+    
     
   return (
 
+<div> 
+
+ <h1 ref={h1Ref}>Portfolio</h1>
+ <div style={styles}>
     
-     
-    <div style={styles}>
-    
-       <div>
+      {/*<div>
          
        <div className="schedule-header text-center text-6xl pt-8 text-white underline decoration-2 font-style: italic">Training Options</div>
        <div className="schedule-container pt-16">
          <div className="schedule-board">
-          {/* Single Row */}
+           
          <div className="schedule-row pt-16">
            <div className="schedule-cell input-field border">
              <span className="input-text text-4xl bold text-slate-700 font-style: italic">Class Schedule</span>
@@ -142,9 +153,11 @@ function Schedule() {
        </div>
        </div>
        </div>
-       </div>    
+  </div>*/}   
         
-    </div>
+ </div>
+
+</div>
      
   );
 }
