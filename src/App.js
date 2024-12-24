@@ -10,6 +10,7 @@ import HomePage  from "./pages/HomePage";
 import Contact  from "./pages/Contact";
 import About  from "./pages/About";
 import Schedule from "./pages/Schedule";
+import Codepens from "./codepens/codepen";
 //import { firestore } from "./firebase/config";
  
 const theme = createTheme({
@@ -39,6 +40,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/schedule" component={Schedule} />
         <Route path="/contact" component={Contact} />
+        <Route path="/codepens" component={Codepens} />
       </Switch>
     </BrowserRouter>
    </ThemeProvider>
