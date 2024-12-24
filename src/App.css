@@ -1,4 +1,4 @@
-/*
+
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -11,7 +11,7 @@
    
   .about-container {
     display: flex;
-    flex-direction: column; /* Updated to stack rows vertically *//*
+    flex-direction: column; /* Updated to stack rows vertically */
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -19,13 +19,13 @@
 
   .schedule-container {
     display: flex;
-    flex-direction: column; /* Updated to stack rows vertically *//*
+    flex-direction: column; /* Updated to stack rows vertically */
     align-items: center;
     justify-content: center;
     height: 100vh;
   }
 
-  .schedule-cell-container {
+ /* .schedule-cell-container {
     display: flex;
     flex-direction: row;  
     align-items: center;
@@ -78,5 +78,5 @@
   outline: 1px solid grey;
   
 }
-*/
+
  
