@@ -13,7 +13,7 @@ function HomePage() {
         
       <div style={styles2}>  
         <div className="home-page-container">
-          <header className="flex justify-center text-7xl text- grey font-serif">
+          <header className="flex justify-center text-7xl text-gray-400 font-serif">
            <h1>Visual Stories</h1>
           </header>
            <h2 className="flex justify-center pb-48 text-4xl decoration-2 font-style: italic underline text-green-300">Emotion/Instinct/Visualization</h2>
