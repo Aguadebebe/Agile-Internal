@@ -4,7 +4,7 @@ import Big_Sur_Waters_Edge from "../images/Big_Sur_Waters_Edge.png";
 
 function HomePage() {
   const styles2 ={
-    backgroundImage:  `url(${Big_Sur_Waters_Edge})`,
+    backgroundImage:  `url(${"https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
       
