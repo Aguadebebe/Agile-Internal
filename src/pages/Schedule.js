@@ -22,9 +22,12 @@ function Schedule() {
   return (
 
       <div> 
-         <h1 ref={h1Ref}>Portfolio</h1>
-         <div style={styles}></div>
-        <div className="schedule-container pt-16"></div>
+          
+          <div style={styles}> 
+            <div className="schedule-container">
+             <h1 ref={h1Ref}>Portfolio</h1>
+            </div>
+          </div>
      </div>
   );
 }
