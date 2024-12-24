@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Agile-Internal/static/css/main.68685b48.css",
-    "main.js": "/Agile-Internal/static/js/main.fba63454.js",
+    "main.css": "/Agile-Internal/static/css/main.13c8293f.css",
+    "main.js": "/Agile-Internal/static/js/main.1c825024.js",
     "static/media/Big_Sur_Waters_Edge.png": "/Agile-Internal/static/media/Big_Sur_Waters_Edge.816aa4afc768d0064257.png",
     "static/media/Big_Sur_Horizon.png": "/Agile-Internal/static/media/Big_Sur_Horizon.c09627f70419ac43d11a.png",
     "static/media/Catalina_Sunset.png": "/Agile-Internal/static/media/Catalina_Sunset.46c5940432602c5b5914.png",
     "index.html": "/Agile-Internal/index.html",
-    "main.68685b48.css.map": "/Agile-Internal/static/css/main.68685b48.css.map",
-    "main.fba63454.js.map": "/Agile-Internal/static/js/main.fba63454.js.map"
+    "main.13c8293f.css.map": "/Agile-Internal/static/css/main.13c8293f.css.map",
+    "main.1c825024.js.map": "/Agile-Internal/static/js/main.1c825024.js.map"
   },
   "entrypoints": [
-    "static/css/main.68685b48.css",
-    "static/js/main.fba63454.js"
+    "static/css/main.13c8293f.css",
+    "static/js/main.1c825024.js"
   ]
 }
