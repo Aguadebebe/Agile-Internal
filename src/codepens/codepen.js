@@ -15,12 +15,32 @@ const Codepens = () => {
             url: "https://codepen.io/agua-1/pen/mdjeeev",
             image: "https://codepen.io/agua-1/pen/mdjeeev/image/large",
           },
+          {
+            title: "Stars or Bubbles",
+            url: "https://codepen.io/agua-1/pen/JjBKoJZ",
+            image: "https://codepen.io/agua-1/pen/JjBKoJZ/image/large",
+          },
     ];
   
     return (
       <div>
-        <h1 style={{ textAlign: "center", fontSize: "3em", color: "green", textShadow: "2px 2px 5px rgba(0, 0, 0, 0.7)" }}>CodePen Projects</h1>
-        <div>
+        <h1 
+          style={{ 
+              textAlign: "center", 
+              fontSize: "3em", 
+              color: "#778899", 
+              textShadow: "3px 3px 5px rgba(1, 1, 1, 1.7)" }}
+              >
+          CodePen Projects
+        </h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "10px"
+          }}
+        >
           {pens.map((pen, index) => (
             <a
               key={index}
