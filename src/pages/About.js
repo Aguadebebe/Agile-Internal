@@ -19,7 +19,7 @@ function About() {
 
     }} 
     className="text-7xl text-center font-style: italic"
-    >
+    > 
     About Visual Stories</h1>
    <p style={{ 
         color: "#D2B48C",
