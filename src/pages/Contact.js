@@ -93,8 +93,8 @@ function Contact() {
             Contact Information
           </h1>
           <h2 className="flex justify-center text-lg mt-5">
-            Feel free to reach out with any questions by filling out the form below 
-            or calling (434)989-1045.
+            Feel free to reach out with any questions by filling out the form below. 
+          
           </h2>
           <form className="w-full max-w-md mx-auto mt-5"
           onSubmit={handleSubmit}

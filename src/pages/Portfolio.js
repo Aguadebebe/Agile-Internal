@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import Codepens from "../codepens/codepen"
 import Catalina_Sunset from "../images/Catalina_Sunset.png";
 
-function Schedule() {
+function Portfolio() {
 
     const styles = {
         backgroundImage:  `url(${Catalina_Sunset})`,
@@ -28,7 +28,7 @@ function Schedule() {
   return (
     <div> 
         <div style={styles}> 
-          <div className="schedule-container">
+          <div className="portfolio-container">
             <h1 ref={h1Ref}>Portfolio</h1>
             <Codepens />
           </div>
@@ -37,4 +37,4 @@ function Schedule() {
   );
 }
 
-export default Schedule;
+export default Portfolio;

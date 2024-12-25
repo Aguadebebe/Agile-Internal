@@ -9,7 +9,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import HomePage  from "./pages/HomePage";
 import Contact  from "./pages/Contact";
 import About  from "./pages/About";
-import Schedule from "./pages/Schedule";
+import Portfolio from "./pages/Portfolio";
 import Codepens from "./codepens/codepen";
 //import { firestore } from "./firebase/config";
  
@@ -38,7 +38,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={About} />
-        <Route path="/schedule" component={Schedule} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
         <Route path="/codepens" component={Codepens} />
       </Switch>
