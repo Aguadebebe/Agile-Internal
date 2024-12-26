@@ -60,7 +60,7 @@ return (
       src={images[currentIndex]}
       alt={`slide ${currentIndex + 1}`}
       style={{
-        maxWidth: "75%",
+        maxWidth: "60%",
         height: "auto",
         display: "block",
         margin: "0 auto",

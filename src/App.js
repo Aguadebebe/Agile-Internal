@@ -10,8 +10,9 @@ import HomePage  from "./pages/HomePage";
 import Contact  from "./pages/Contact";
 import About  from "./pages/About";
 import Portfolio from "./pages/Portfolio";
-import Codepens from "./codepens/codepen";
+import Codepens from "./codepens/Codepens";
 import Carousel from "./codepens/Carousel";
+import MainContent from "./content/MainContent";
 //import { firestore } from "./firebase/config";
  
 const theme = createTheme({
@@ -42,7 +43,8 @@ function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
         <Route path="/codepens" component={Codepens} />
-        <Route path="/Carousel" component={Carousel} />
+        <Route path="/carousel" component={Carousel} />
+        <Route path="/maincontent" component={MainContent} />
       </Switch>
     </BrowserRouter>
    </ThemeProvider>

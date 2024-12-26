@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import Codepens from "../codepens/codepen"
+import Codepens from "../codepens/Codepens"
 import Carousel from "../codepens/Carousel"
 import Catalina_Sunset from "../images/Catalina_Sunset.png";
 
