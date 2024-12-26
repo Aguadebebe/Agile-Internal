@@ -38,7 +38,7 @@ const Codepens = () => {
             display: "flex",
             justifyContent: "center",
             flexWrap: "wrap",
-            gap: "10px"
+            gap: "30px"
           }}
         >
           {pens.map((pen, index) => (

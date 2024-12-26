@@ -25,7 +25,8 @@ return (
  <div style={{ 
        position: "relative", 
        width: "100%", 
-       textAlign: "center" 
+       textAlign: "center", 
+       
     }}>
     <button onClick={handleNext}
               style={{ 
@@ -34,7 +35,7 @@ return (
                 fontWeight: "bold", 
                 fontFamily: "serif",
                 fontSize: "20px",
-                left: -50,
+                left: -30,
                 borderRadius: "10px", // Adjust the value for roundness
                 border: "2px solid black", // Optional: Add a visible border 
                 textShadow: "2px 2px 4px rgba(1, 1, 1, 1.7)"
@@ -52,7 +53,8 @@ return (
          left: 0,
          borderRadius: "10px", // Adjust the value for roundness
          border: "2px solid black", // Optional: Add a visible border 
-         textShadow: "2px 2px 4px rgba(1, 1, 1, 1.7)"
+         textShadow: "2px 2px 4px rgba(1, 1, 1, 1.7)",
+         
  }}>
      Flip Right
     </button>
@@ -60,11 +62,12 @@ return (
       src={images[currentIndex]}
       alt={`slide ${currentIndex + 1}`}
       style={{
-        maxWidth: "60%",
+        maxWidth: "50%",
         height: "auto",
         display: "block",
         margin: "0 auto",
-        borderRadius: "50px"
+        borderRadius: "50px",
+         
 
  }}/>
        

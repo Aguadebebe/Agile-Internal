@@ -30,7 +30,7 @@ function Portfolio() {
     <div> 
         <div style={styles}> 
           <div className="portfolio-container">
-            <h1 style={{ marginTop: "200px" }} ref={h1Ref}>Portfolio</h1>
+            <h1 style={{ marginTop: "800px" }} ref={h1Ref}>Portfolio</h1>
             <Codepens />
             <div style={{ 
                  marginTop: '30px' 

@@ -11,6 +11,7 @@ const MainContent = () => {
         alignItems: "center",
         justifyContent: "center",
         minHeight: "100vh",
+         
       }}
     >
       <div>
