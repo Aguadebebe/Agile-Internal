@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import Codepens from "../codepens/codepen"
+import Carousel from "../codepens/Carousel"
 import Catalina_Sunset from "../images/Catalina_Sunset.png";
 
 function Portfolio() {
@@ -29,8 +30,14 @@ function Portfolio() {
     <div> 
         <div style={styles}> 
           <div className="portfolio-container">
-            <h1 ref={h1Ref}>Portfolio</h1>
+            <h1 style={{ marginTop: "200px" }} ref={h1Ref}>Portfolio</h1>
             <Codepens />
+            <div style={{ 
+                 marginTop: '30px' 
+          }}>
+             <Carousel />
+           </div>
+
           </div>
         </div>
     </div>

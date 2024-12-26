@@ -23,7 +23,7 @@ function About() {
     About Visual Stories</h1>
    <p style={{ 
         color: "#D2B48C",
-        textShadow: "5px 5px 7px rgba(0, 0, 0, 0.7)"
+        textShadow: "4px 4px 7px rgba(0, 0, 0, 0.7)"
     }} 
     className="text-3xl text-center text-white pb-30"
    >     

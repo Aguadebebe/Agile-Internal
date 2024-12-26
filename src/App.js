@@ -11,6 +11,7 @@ import Contact  from "./pages/Contact";
 import About  from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Codepens from "./codepens/codepen";
+import Carousel from "./codepens/Carousel";
 //import { firestore } from "./firebase/config";
  
 const theme = createTheme({
@@ -41,6 +42,7 @@ function App() {
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/contact" component={Contact} />
         <Route path="/codepens" component={Codepens} />
+        <Route path="/Carousel" component={Carousel} />
       </Switch>
     </BrowserRouter>
    </ThemeProvider>
