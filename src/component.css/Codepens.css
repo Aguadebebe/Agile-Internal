@@ -1,0 +1,27 @@
+/* Styles for Codepens component */
+
+/*.codepen-title {
+    text-align: center;
+    font-size: 3em;
+    color: #778899;
+    text-shadow: 3px 3px 5px rgba(1, 1, 1, 1.7);
+  }*/
+  
+  .codepen-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .codepen-link {
+    text-decoration: none;
+  }
+  
+  .codepen-image {
+    width: 300px;
+    margin: 10px;
+  }
+  
+
+ 

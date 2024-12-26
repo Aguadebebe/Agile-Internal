@@ -2,6 +2,41 @@ import React, { useRef, useEffect } from 'react';
 import Codepens from "../codepens/Codepens"
 import Carousel from "../codepens/Carousel"
 import Catalina_Sunset from "../images/Catalina_Sunset.png";
+import '../component.css/Portfolio.css';  // Import the CSS file
+
+function Portfolio() {
+  const h1Ref = useRef(null);
+
+  // Handle any additional effects (e.g., if you need to add more dynamic styles)
+  useEffect(() => { 
+    if (h1Ref.current) {
+      // You can still apply dynamic styles here if needed, but it's now optional
+      h1Ref.current.style.color = 'grey';  // Optional as it is defined in CSS
+    }
+  }, []);
+
+  return (
+    <div className="portfolio-background" style={{ backgroundImage: `url(${Catalina_Sunset})` }}>
+      <div className="portfolio-container">
+        <h1 className="portfolio-header" ref={h1Ref}>Portfolio</h1>
+        <Codepens />
+        <div className="carousel-container">
+          <Carousel />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Portfolio;
+
+
+
+/* Portfolio component using inline styles*/
+/*import React, { useRef, useEffect } from 'react';
+import Codepens from "../codepens/Codepens"
+import Carousel from "../codepens/Carousel"
+import Catalina_Sunset from "../images/Catalina_Sunset.png";
 
 function Portfolio() {
 
@@ -44,4 +79,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Portfolio;*/

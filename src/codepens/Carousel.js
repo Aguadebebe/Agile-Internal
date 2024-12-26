@@ -1,4 +1,69 @@
 import React, { useState } from "react";
+import "../component.css/Carousel.css";
+
+const Carousel = () => {
+  const images = [
+    "https://images.pexels.com/photos/908644/pexels-photo-908644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/789380/pexels-photo-789380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/1032654/pexels-photo-1032654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [leftHover, setLeftHover] = useState(false);
+  const [rightHover, setRightHover] = useState(false);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+  
+   
+
+  return (
+    <div className="Carousel-container">
+      {/* Buttons */}
+      <div className="button-container">
+        <button
+          className={`button ${leftHover ? "button-left-hover" : ""}`}
+          onMouseEnter={() => setLeftHover(true)}
+          onMouseLeave={() => setLeftHover(false)}
+          onClick={handlePrev}
+        >
+          Flip Left
+        </button>
+        <button
+          className={`button ${rightHover ? "button-right-hover" : ""}`}
+          onMouseEnter={() => setRightHover(true)}
+          onMouseLeave={() => setRightHover(false)}
+          onClick={handleNext}
+        >
+          Flip Right
+        </button>
+      </div>
+
+      {/* Carousel Image */}
+      <img
+        src={images[currentIndex]}
+        alt={`slide ${currentIndex + 1}`}
+        className="image"
+      />
+    </div>
+  );
+};
+
+export default Carousel;
+
+
+
+
+/*import React, { useState } from "react";
 
 const Carousel = () => {
   const images = [
@@ -59,7 +124,7 @@ const Carousel = () => {
 
   return (
     <div style={styles.container}>
-      {/* Buttons */}
+      {/* Buttons }
       <div style={styles.buttonContainer}>
         <button
           onMouseEnter={() => setLeftHover(100)} // Individual hover effect for left button
@@ -85,7 +150,7 @@ const Carousel = () => {
         </button>
       </div>
 
-      {/* Carousel Image */}
+      {/* Carousel Image }
       <img
         src={images[currentIndex]}
         alt={`slide ${currentIndex + 1}`}
@@ -95,4 +160,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Carousel;*/

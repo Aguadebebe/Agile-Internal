@@ -1,0 +1,49 @@
+
+/*Carousel component styles*/
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    min-height: 700px; /* adjust this value based on your needs */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .button {
+    position: relative;
+    color: #D8BFD8;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-shadow: 2px 2px 4px rgba(1, 1, 1, 1.7);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+  
+  .button-left-hover {
+    background: linear-gradient(90deg, #D8BFD8 100%, transparent 0);
+  }
+  
+  .button-right-hover {
+    background: linear-gradient(90deg, #D8BFD8 100%, transparent 0);
+  }
+  
+  .image {
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50px;
+  }
+  
+
+ 

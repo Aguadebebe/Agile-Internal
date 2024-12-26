@@ -1,6 +1,29 @@
-/*import Big_Sur_Horizon from "../images/Big_Sur_Horizon.png";*/
+
+import React from "react";
+import "../component.css/About.css"; // Import the CSS file
 
 function About() {
+    return (
+        <div className="about-background">
+            <div className="about-container"> 
+                <h1 className="about-title"> 
+                    About Visual Stories
+                </h1>
+                <p className="about-description">     
+                    Welcome! Development and WebDesign services to create solutions!
+                </p>
+            </div>
+        </div>
+    );
+}
+
+export default About;
+
+
+
+/*import Big_Sur_Horizon from "../images/Big_Sur_Horizon.png";*/
+
+/*function About() {
     const styles3 ={
         backgroundImage: `url(${"https://images.pexels.com/photos/2530911/pexels-photo-2530911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"})`,
         backgroundRepeat: "no-repeat",
@@ -17,7 +40,7 @@ function About() {
         color: "transparent", // Makes the text color transparent
         /*textShadow: "3px 3px 7px rgba(0, 0, 0, 0.7)",*/
 
-    }} 
+   /* }} 
     className="text-7xl text-center font-style: italic"
     > 
     About Visual Stories</h1>
@@ -34,4 +57,4 @@ function About() {
     );
 }
 
-export default About;
+export default About;*/
