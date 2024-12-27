@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Agile-Internal/static/css/main.f22f20a4.css",
+    "main.css": "/Agile-Internal/static/css/main.b2717113.css",
     "main.js": "/Agile-Internal/static/js/main.bcff87c9.js",
     "static/media/Catalina_Sunset.png": "/Agile-Internal/static/media/Catalina_Sunset.46c5940432602c5b5914.png",
     "index.html": "/Agile-Internal/index.html",
-    "main.f22f20a4.css.map": "/Agile-Internal/static/css/main.f22f20a4.css.map",
+    "main.b2717113.css.map": "/Agile-Internal/static/css/main.b2717113.css.map",
     "main.bcff87c9.js.map": "/Agile-Internal/static/js/main.bcff87c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.f22f20a4.css",
+    "static/css/main.b2717113.css",
     "static/js/main.bcff87c9.js"
   ]
 }
