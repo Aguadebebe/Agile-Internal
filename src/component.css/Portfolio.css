@@ -2,6 +2,11 @@
 
 .portfolio-container {
     position: relative;
+    display: flex;
+    flex-direction: column; /* Updated to stack rows vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
   }
   
   .portfolio-background {
